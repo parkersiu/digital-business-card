@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Last;First;;;
+FN:First Last
+ORG:Example Company
+TEL;TYPE=work,voice:1234567890
+TEL;TYPE=mobile,voice:1234567890
+EMAIL;TYPE=work:name@email.com
+ADR;TYPE=home:;;123 Main St;City;State;00000;USA
+END:VCARD
