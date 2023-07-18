@@ -41,10 +41,10 @@ export default function Home() {
 
   return (
     <main>
-      <div className='container m-auto'>
+      <div className='m-auto'>
         {cardFront ? (
-          <div className="flex justify-center m-5">
-            <a onClick={cardFlip} className="flex flex-col items-center p-3 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <div className="flex justify-center m-auto my-3 w-80 md:w-1/3">
+            <a onClick={cardFlip} className="w-full h-full flex flex-col items-center p-3 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
               <Image className="object-cover w-full h-96 md:h-auto md:w-48" src="/profile-placeholder.png" alt="headshot image" width={100} height={100} priority={true} />
               <div className="flex flex-col justify-between p-4 leading-normal">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">John Doe</h5>
@@ -59,8 +59,8 @@ export default function Home() {
             </a>
           </div>
           ) : (
-            <div className="flex justify-center m-5">
-              <a onClick={cardFlip} className="flex flex-col items-center p-3 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <div className="flex justify-center m-auto my-3 w-80 md:w-1/3">
+              <a onClick={cardFlip} className="w-full h-full flex flex-col items-center p-3 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <div className="flex flex-col justify-between p-4 leading-normal">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">John Doe</h5>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Title</p>
